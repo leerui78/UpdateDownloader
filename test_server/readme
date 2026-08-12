@@ -1,0 +1,18 @@
+python本地模拟服务器：
+python -m http.server 8000
+
+
+python快速获取文件hash码：
+python -c "import hashlib; print(hashlib.md5(open('MyApp_v2.0.0.exe','rb').read()).hexdigest())"
+命令行获取文件hash码：
+certutil -hashfile MyApp_v2.0.0.exe MD5
+
+代码：VS和Qt creator(CMake项目)
+
+debug和release：Qt creator
+
+完善.exe的依赖项：
+windeployqt.exe --no-compiler-runtime UpdateDownloader.exe
+
+setup制作：
+Inno Setup Compiler软件
